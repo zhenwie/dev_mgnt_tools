@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  nginx:
+    image: 'nginx:latest'
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      - NGINX_HOST=www.traviszheng.com
+      - NGINX_PORT=80
+    volumes:
+      - '/srv/docker/nginx/nginx_site:/etc/nginx/conf.d'
+      - '/srv/docker/nginx/nginx_data:/home/nginx/data'
