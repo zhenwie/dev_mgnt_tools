@@ -12,3 +12,5 @@ services:
     volumes:
       - '/srv/docker/nginx/nginx_site:/etc/nginx/conf.d'
       - '/srv/docker/nginx/nginx_data:/home/nginx/data'
+    restart: always
+

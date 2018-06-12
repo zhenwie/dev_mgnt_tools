@@ -88,6 +88,10 @@ services:
     - IMAP_SSL=true
     - IMAP_STARTTLS=false
 
+    - LDAP_ENABLED=true
+    - LDAP_LABEL="hello ldap"
+    - LDAP_HOST=192.168.2.107
+
     - OAUTH_ENABLED=false
     - OAUTH_AUTO_SIGN_IN_WITH_PROVIDER=
     - OAUTH_ALLOW_SSO=
