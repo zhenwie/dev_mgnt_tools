@@ -90,7 +90,13 @@ services:
 
     - LDAP_ENABLED=true
     - LDAP_LABEL="hello ldap"
-    - LDAP_HOST=192.168.2.107
+    - LDAP_HOST=192.168.2.7
+    - LDAP_UID=uid
+    - LDAP_BIND_DN=cn=admin,dc=traviszheng,dc=net
+    - LDAP_PASS=admin
+    - LDAP_ACTIVE_DIRECTORY=false
+    - LDAP_BASE=ou=people,dc=traviszheng,dc=net
+
 
     - OAUTH_ENABLED=false
     - OAUTH_AUTO_SIGN_IN_WITH_PROVIDER=
