@@ -39,7 +39,6 @@ services:
     ports:
       - "389:389"
       - "636:636"
-    domainname: "traviszheng.net" # important: same as hostname
     hostname: "ldap"
   phpldapadmin:
     image: osixia/phpldapadmin:latest
