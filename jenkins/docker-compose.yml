@@ -3,7 +3,7 @@ services:
   jenkins:
     image: 'bitnami/jenkins:latest'
     ports:
-      - '8181:8080'
+      - '10084:8080'
       - '9443:8443'
     volumes:
       - '/srv/docker/jenkins/jenkins_data:/bitnami'

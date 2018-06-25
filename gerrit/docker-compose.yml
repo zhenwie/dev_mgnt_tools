@@ -7,7 +7,7 @@ services:
     domainname: traviszheng.net
     container_name: gerrit
     ports:
-    - "8080:8080"
+    - "10082:8080"
     - "29418:29418"
     volumes:
     - /srv/docker/gerrit/gerrit_site:/var/gerrit/review_site

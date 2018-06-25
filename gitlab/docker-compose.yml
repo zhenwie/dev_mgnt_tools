@@ -27,7 +27,7 @@ services:
     - redis
     - postgresql
     ports:
-    - "10080:80"
+    - "10081:80"
     - "10022:22"
     volumes:
     - /srv/docker/gitlab/gitlab:/home/git/data:Z
@@ -90,7 +90,7 @@ services:
 
     - LDAP_ENABLED=true
     - LDAP_LABEL="hello ldap"
-    - LDAP_HOST=192.168.2.7
+    - LDAP_HOST=192.168.1.110
     - LDAP_UID=uid
     - LDAP_BIND_DN=cn=admin,dc=traviszheng,dc=net
     - LDAP_PASS=admin
