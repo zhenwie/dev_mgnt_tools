@@ -1,6 +1,7 @@
 version: '2'
 services:
   jenkins:
+    restart: always
     image: 'bitnami/jenkins:latest'
     ports:
       - '10084:8080'
