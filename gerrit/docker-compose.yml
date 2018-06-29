@@ -4,7 +4,7 @@ services:
   gerrit:
     image: openfrontier/gerrit:latest
     hostname: gerrit
-    domainname: traviszheng.net
+    domainname: njdongshang.net
     container_name: gerrit
     ports:
     - "10082:8080"
@@ -12,6 +12,10 @@ services:
     volumes:
     - /srv/docker/gerrit/gerrit_site:/var/gerrit/review_site
     environment:
-    - WEBURL=http://gerrit.traviszheng.net:8080
-    - AUTH_TYPE=HTTP
+    - WEBURL=http://gerrit.njdongshang.net
+    - AUTH_TYPE=LDAP
+    - LDAP_SERVER=ldap://ldap.njdongshang.net
+    - LDAP_ACCOUNTBASE=ou=people,dc=traviszheng,dc=net
+    extra_hosts:
+    - "ldap.njdongshang.net:192.168.1.110"
     restart: always
