@@ -2,7 +2,7 @@ version: '2'
 
 services:
   gerrit:
-    image: openfrontier/gerrit:latest
+    image: openfrontier/gerrit:2.15.2
     hostname: gerrit
     domainname: njdongshang.net
     container_name: gerrit
