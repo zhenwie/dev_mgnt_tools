@@ -50,8 +50,8 @@ services:
     - GITLAB_HTTPS=false
     - SSL_SELF_SIGNED=false
 
-    - GITLAB_HOST=gitlab.traviszheng.net
-    - GITLAB_PORT=10080
+    - GITLAB_HOST=gitlab.njdongshang.net
+    - GITLAB_PORT=80
     - GITLAB_SSH_PORT=10022
     - GITLAB_RELATIVE_URL_ROOT=
     - GITLAB_SECRETS_DB_KEY_BASE=long-and-random-alphanumeric-string
